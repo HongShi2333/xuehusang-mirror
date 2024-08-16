@@ -1,0 +1,1122 @@
+﻿<!doctype html>
+<html><head>
+	<meta charset="utf-8">
+	<title>雪狐纪 · 十万粉丝纪念</title>
+	
+	<link href="css/video-js.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="icon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../t/font_u4qz1594lnixusor.css">
+	<link href="css/video-js.css" rel="stylesheet" type="text/css">
+	<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.5.1.min.js">
+	</script>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script>
+    videojs.options.flash.swf = "/js/video-js.swf";
+	</script>
+
+<!--主CSS-->
+<style>
+body {
+	background-image: url("BG2.jpg");
+	background-attachment:fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #dfdfdf;
+	margin-bottom: 5px;
+	cursor: url('mouse.png'), default;
+}
+.main{
+	width: 1260px;	
+	margin: auto;
+	}
+.left{
+    width:960px;
+    float:left;
+}
+.right{
+    margin-left:970px;//等于左边栏的宽度
+}
+.m {
+	width: 960px;
+	height: 540px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	transition: 0.5s;
+}
+.recommend{
+	background-color: rgba(52,57,123,1.00);
+	width: 300px;
+	height: auto;
+	margin-top: 10px;
+	}
+.page-bg-logo-box {
+    width: 906px;
+    margin: 0 auto;
+}
+.page-bg-logo {
+    transform: translateZ(0);
+    margin: 0px auto 0px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 240px;
+    height: 204px;
+    background-size: contain;
+}
+.top{
+	position: fixed;
+	width: 90%;
+	top: 0;
+}
+/*视频列表css*/
+.list{
+    width: 300px;
+    height: 540px;
+    background-color: rgba(52,57,123,1.00);
+    overflow: auto;
+	}
+/*-------滚动条整体样式----*/
+.list::-webkit-scrollbar {
+width:8px;
+height:8px;
+}
+/*滚动条里面小方块样式*/
+.list::-webkit-scrollbar-thumb {
+border-radius:100px;
+-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+background: rgba(35,39,84,1.00) ;
+}
+
+* {
+	padding:0;
+	margin:0;
+}
+ul {
+	list-style-type:none;
+}
+p {font-size: 20px;
+	color: aliceblue;}
+.parentWrap {
+    width: 300px;
+    text-align: left;
+    margin-left: 0;
+	padding-top: 10px;
+}
+.menuGroup {
+	border:1px solid #34397B;
+	background-color:#34397B;
+}
+.groupTitle {
+	display:block;
+	height:30px;
+	line-height:20px;
+	font-size:16px;
+	font-weight: bold;
+	color: aliceblue;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 8px;
+	border-bottom:1px solid #5B61B9;
+	cursor: url('mouse.png'), default;
+}
+.menuGroup > div {
+    background-color: #34397B;
+    display: none;
+    color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.togvideo {
+	width: 260px;
+	overflow: auto;
+}
+.singlevideo{
+	width: 260px;
+	height: 60px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+	.singlevideo > img {
+    width: 110px;
+    float: left;
+	}
+	.singlevideo > span {
+		font-size: 13px;
+		color: #FFE7B0;
+		float: left;
+		margin-left: 10px;
+	}
+	.model1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+	}
+.presslist {
+	background-color:transparent;
+    border-style:none;
+	margin: 0;
+	width: 260px;	
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	cursor: url('mouse.png'), default;
+	}
+.presslist:hover {
+    background-color: rgba(0,101,221,0.46); /* Green */
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	cursor: url('mouse.png'), default;
+}
+}
+/*相关推荐*/
+.recimg{
+	width: 260px;
+	height: auto;
+	margin-top: 16px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+
+.font1{
+	padding-top: 16px;
+	color: aliceblue;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom: 0;
+	}
+</style>
+<!--视频下方css-->
+<style>
+.below{
+	width: 960px;
+	background-color: rgba(52,57,123,1.00);
+	margin:10px auto 0px auto;
+	padding-bottom: 30px;
+	}
+
+/*intro*/
+.intro {
+		
+}
+/*jq滚动栏css*/
+
+.scrollpic {
+	width: 900px;
+	margin:0px auto 0 auto;
+}
+#mycontent {
+	width:100%;
+	border-radius:10px;
+	background-color: rgba(255,255,255,0.36);
+	margin-top: 20px;
+}
+#myscroll {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;	
+}
+
+</style>
+<!--贺图区css-->
+<style>
+img {  border: 0;vertical-align: middle; max-width:100%;}
+.clearfix:after{ content:""; display:block; clear:both; height:0; visibility:hidden;}
+.clearfix{ zoom:1;}
+.main1{max-width:900px; margin:20px auto; padding:0px 0;}
+.title{font-size:24px; margin-bottom: 1em; text-align: center;}
+.img-count,.img-count img{position:relative;}
+.img-count-in{ position:absolute; top:0; left:0; right:0; bottom:0; overflow:hidden;height:100%; *height:100%;}
+
+.w-newsList1{position: relative;}
+.w-newsList1 a{ display: block; text-decoration: none; color: #333;}
+.w-newsList1 .news-item{ position:relative;}
+.w-newsList1 .news-imgbox{ width:80%;}
+.w-newsList1 .news-imgbox img{ transition:transform 3.5s; -webkit-transition:transform 3.5s;transform:scale(1.1); -webkit-transform:scale(1.1);}
+.w-newsList1 .swiper-slide.swiper-slide-active .news-imgbox img{ transform:scale(1); -webkit-transform:scale(1);}
+.w-newsList1 .aspectRatio{padding-bottom:450px;}
+.w-newsList1 .news-text{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    top: 10%;
+    ;
+    transform: translateY(-50%);
+    background: #fff;
+	border-radius: 20px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 4%;
+    padding-bottom: 0px;
+    overflow: hidden;
+    height: 80px;
+}
+:root .w-newsList1 .news-text{ top:80%;}
+.w-newsList1 .date{ line-height: 1.4; margin-bottom: 0.8em;}
+.w-newsList1 .date .year{ font-size:46px; font-weight: bold; color: #000; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.w-newsList1 .date .day_month{font-size:17px; color: #bebebe;}
+.w-newsList1 .news-h{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+    height: 2.8em;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.w-newsList1 .news-sum{ line-height: 1.8; height:3.5em; overflow: hidden; color:#aaa;}
+
+.w-newsList1 .adSN_page{
+    position: absolute;
+    z-index: 9;
+    left: 80%;
+    bottom: 38%;
+    margin-bottom: -115px;
+    top: auto;
+    transform: none;
+    -webkit-transform: none;
+    width: 36%;
+    padding-left: 4%;
+}
+.w-newsList1 .adSN_page span{ display: inline-block; *display:inline; *zoom:1; margin:0 6px;}
+.w-newsList1 .swiper-num{
+    position: absolute;
+    z-index: 9;
+    right: 15px;
+    top: 85%;
+    margin-top: -130px;
+    color: #bebebe;
+}
+.w-newsList1 .swiper-num .active{ font-size:32px; font-weight: bold;}
+
+.w-newsList2{position: relative; overflow:hidden;}
+.w-newsList2 a{ display: block; text-decoration: none; color: #333;}
+.w-newsList2 .news-item{ position:relative;}
+.w-newsList2 .img{ float: right; width:52%; overflow: hidden;}
+.w-newsList2 .img img{transition:transform 3.5s; -webkit-transition:transform 3.5s;transform:scale(1.1); -webkit-transform:scale(1.1);}
+.w-newsList2 .swiper-slide.swiper-slide-active .img img{ transform:scale(1); -webkit-transform:scale(1);}
+.w-newsList2 .news-text{ margin-right:56%;}
+.w-newsList2 .news-h{font-size:28px; line-height: 1.4; margin-bottom: 1em;}
+.w-newsList2 .news-sum{margin-top:30px; line-height: 1.8; color:#808080;}
+.w-newsList2 .more{position: absolute; left: 0; bottom: 1em; line-height: 2.8; padding: 0 3em; border:1px solid #aaa; color:#333;overflow: hidden; -webkit-transition: all .6s;transition: all .6s;}
+.w-newsList2 .more:hover{color:#fff; border-color:#FF6600;}
+.w-newsList2 .more .bgsqr1,.w-newsList2 .more .bgsqr2,.w-newsList2 .more .bgsqr3,.w-newsList2 .more .bgsqr4{background:#FF6600;position: absolute;top:0; width: 0px;height: 100%;-webkit-transition: all 0.4s; transition: all 0.4s; opacity:0.35;}
+.w-newsList2 .more .bgsqr3,.w-newsList2 .more .bgsqr4{ opacity:0.75;}
+.w-newsList2 .more .bgsqr1{ left:0;}
+.w-newsList2 .more .bgsqr2{ right:0}
+.w-newsList2 .more .bgsqr3{ right:0;}
+.w-newsList2 .more .bgsqr4{ left:0;}
+.w-newsList2 .more:hover .bgsqr1,.w-newsList2 .more:hover .bgsqr2,.w-newsList2 .more:hover .bgsqr3,.w-newsList2 .more:hover .bgsqr4{ width:100%;}
+.w-newsList2 .more:hover .bgsqr3,.w-newsList2 .more:hover .bgsqr4{-webkit-transition-delay:.4s;transition-delay:.4s;}
+.w-newsList2 .more span{ position:relative; z-index:1;}
+.w-newsList2 .adSN_page{ position: absolute; left: auto; right:10px; width: auto; z-index: 10; text-align: right; }
+.w-newsList2.swiper-container-horizontal .adSN_page{bottom:20px;}
+.w-newsList2 .adSN_page span{ background: #c9c9c9; opacity: 1; width:40px; height: 5px; border-radius: 0; -webkit-border-radius: 0;}
+.w-newsList2 .adSN_page span.swiper-pagination-bullet-active{background: #f60;}
+.w-newsList2.swiper-container-vertical .adSN_page span{margin:15px 0;}
+
+@media (max-width : 1058px ){
+	.w-newsList2 .news-h{font-size:24px;}
+	.w-newsList2 .news-sum{ display: none;}
+}
+@media (max-width:767px){
+    .w-newsList1 .news-imgbox{width:100%;}
+	.w-newsList1 .aspectRatio{padding-bottom: 56.25%;}
+	.w-newsList1 .news-text{ position: relative; width:100%; top:0; transform: none; -webkit-transform: none; padding:1.2em 4% 1.5em;}
+	:root .w-newsList1 .news-text{ top:0;}
+	.w-newsList1 .adSN_page{
+    right: 0;
+    /* [disabled]bottom: 1em; */
+    margin-bottom: 0;
+}
+	.w-newsList1 .swiper-num{ bottom: 232px; top: auto; margin-top: 0;}
+
+	.w-newsList2 .news-h{font-size:20px;}
+	.w-newsList2 .img{float: none; width:100%;}
+	.w-newsList2 .news-text{margin-right: 0; text-align: center; padding:1em 0 3em;}
+	.w-newsList2 .more{position: relative; margin-top:1.2em; bottom: 0; display: inline-block;}
+	.w-newsList2 .adSN_page{ top: auto; bottom: 0 !important; left: 0; right: 0 ; transform: none; -webkit-transform: none; text-align: center;}
+	.w-newsList2 .adSN_page span{
+    margin-top: auto;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 1.8em;
+    height: 0.25em;
+    position: relative;
+}
+}
+@media (max-width:480px){
+    body{font-size:4vw;}
+    .title{font-size:6vw;}
+    .w-newsList1 .news-h{font-size:125%;}
+	.w-newsList1 .date .year{ font-size:300%;}
+	.w-newsList1 .date .day_month{ font-size: 110%;}
+	.w-newsList1 .swiper-num{ bottom: 15em;}
+	.w-newsList1 .swiper-num .active{ font-size: 200%;}
+
+	.w-newsList2 .news-h{font-size:125%;}
+}
+</style>
+<!--鼠标跟踪图css-->		
+<style>
+      header {
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      header > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --offset: 0px;
+        --blur: 2px;
+      }
+      
+      header > div > img {
+        display: block;
+        width: 110%;
+        height: 100%;
+        object-fit: cover;
+        transform: translatex(var(--offset));
+        filter: blur(var(--blur));
+      }     
+    </style>
+<!--贺词区css-->
+<style>
+	.cb{
+    /* [disabled]margin-left: 30px; */
+    margin-top: 30px;
+	}
+    .item {
+      width: 600px;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .photo {
+      height: 60px;
+      width: 60px;
+      background-color: #666;
+      border-radius: 15px;
+      margin-right: 20px;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.36);
+      border-radius: 15px;
+	  color: aliceblue;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+	  font-weight: 8000;
+	  font-size: 20px;
+    }
+
+    .content {
+      text-indent: 2em;
+		font-weight: 500;
+    }
+/*footer*/
+footer{
+	text-align: center;
+	color: rgba(255,255,255,0.70);
+	margin: 10 0 0 5;
+	}
+ hr {
+    width: 80%;
+    margin: 10px auto;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      cyan,
+      rgba(0, 0, 0, 0)
+    );
+  }
+</style>
+
+<script type="text/javascript">
+
+function Test(obj) {
+    var val = $(obj).val();
+    //sourceDom = $("<source src=\""+val+"\">");
+    $("#video-box video").prop("src",val);
+    //$("#video-box video").append("<source src=\""+val+"\">");
+    $("#video-box").show();
+    $("#video-box video").play()
+
+
+}
+    function test(obj) {
+        var url = $(obj).val();
+        videojs.options.flash.swf = "__JS_/js/video-js.swf";
+        var myPlayer = videojs("example_video_1");
+        myPlayer.src(url);
+        myPlayer.load(url);
+    }
+</script>
+</head>
+<body>
+<div class="page-bg-logo-box">
+<div class="page-bg-logo" style="background-image: url(logo.png)"></div>
+</div>
+<div class="main">
+<div class="left">
+<div class="m">
+<div id="video-box">
+   <video id="example_video_1" class="video-js" controls="" preload="auto" width="960" height="540" poster="m.jpg" data-setup="{}" autoplay="">
+        <source src="" type="video/mp4" id="videoURL">
+      </video> 
+      <script type="text/javascript">
+		  //设置中文
+		  videojs.addLanguage('zh-CN', {
+			  "Play": "播放",
+			  "Pause": "暂停",
+			  "Current Time": "当前时间",
+			  "Duration": "时长",
+			  "Remaining Time": "剩余时间",
+			  "Stream Type": "媒体流类型",
+			  "LIVE": "直播",
+			  "Loaded": "加载完毕",
+			  "Progress": "进度",
+			  "Fullscreen": "全屏",
+			  "Non-Fullscreen": "退出全屏",
+			  "Mute": "静音",
+			  "Unmute": "取消静音",
+			  "Playback Rate": "播放速度",
+			  "Subtitles": "字幕",
+			  "subtitles off": "关闭字幕",
+			  "Captions": "内嵌字幕",
+			  "captions off": "关闭内嵌字幕",
+			  "Chapters": "节目段落",
+			  "Close Modal Dialog": "关闭弹窗",
+			  "Descriptions": "描述",
+			  "descriptions off": "关闭描述",
+			  "Audio Track": "音轨",
+			  "You aborted the media playback": "视频播放被终止",
+			  "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+			  "Please select the list of videos on the right.": "请选择右侧列表视频",
+			  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+			  "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+			  "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。",
+			  "Play Video": "播放视频",
+			  "Close": "关闭",
+			  "Modal Window": "弹窗",
+			  "This is a modal window": "这是一个弹窗",
+			  "This modal can be closed by pressing the Escape key or activating the close button.": "可以按ESC按键或启用关闭按钮来关闭此弹窗。",
+			  ", opens captions settings dialog": ", 开启标题设置弹窗",
+			  ", opens subtitles settings dialog": ", 开启字幕设置弹窗",
+			  ", opens descriptions settings dialog": ", 开启描述设置弹窗",
+			  ", selected": ", 选择",
+			  "captions settings": "字幕设定",
+			  "Audio Player": "音频播放器",
+			  "Video Player": "视频播放器",
+			  "Replay": "重播",
+			  "Progress Bar": "进度小节",
+			  "Volume Level": "音量",
+			  "subtitles settings": "字幕设定",
+			  "descriptions settings": "描述设定",
+			  "Text": "文字",
+			  "White": "白",
+			  "Black": "黑",
+			  "Red": "红",
+			  "Green": "绿",
+			  "Blue": "蓝",
+			  "Yellow": "黄",
+			  "Magenta": "紫红",
+			  "Cyan": "青",
+			  "Background": "背景",
+			  "Window": "视窗",
+			  "Transparent": "透明",
+			  "Semi-Transparent": "半透明",
+			  "Opaque": "不透明",
+			  "Font Size": "字体尺寸",
+			  "Text Edge Style": "字体边缘样式",
+			  "None": "无",
+			  "Raised": "浮雕",
+			  "Depressed": "压低",
+			  "Uniform": "均匀",
+			  "Dropshadow": "下阴影",
+			  "Font Family": "字体库",
+			  "Proportional Sans-Serif": "比例无细体",
+			  "Monospace Sans-Serif": "单间隔无细体",
+			  "Proportional Serif": "比例细体",
+			  "Monospace Serif": "单间隔细体",
+			  "Casual": "舒适",
+			  "Script": "手写体",
+			  "Small Caps": "小型大写字体",
+			  "Reset": "重启",
+			  "restore all settings to the default values": "恢复全部设定至预设值",
+			  "Done": "完成",
+			  "Caption Settings Dialog": "字幕设定视窗",
+			  "Beginning of dialog window. Escape will cancel and close the window.": "开始对话视窗。离开会取消及关闭视窗",
+			  "End of dialog window.": "结束对话视窗"
+			});
+		  
+		  
+		  
+		  
+		  
+		  
+			var myPlayer = videojs('my-video');
+			videojs("my-video").ready(function(){
+				var myPlayer = this;
+				myPlayer.play();
+			});
+			  
+		</script> 
+    </div>
+	</div>
+	<div class="below"><!--
+	<img src="images/banner.jpg" width="960px">-->
+		<header>
+	<div>
+	<img src="images/slider/1.jpg" alt="BG"></div>
+    <div><img src="images/slider/bilibili-autumn-2.png" alt="BG part1"></div>
+      <div><img src="images/slider/bilibili-autumn-3.png" alt="BG part2"></div>
+      <div><img src="images/slider/bilibili-autumn-4.png" alt="BG part3"></div>
+      <div><img src="images/slider/bilibili-autumn-5.png" alt="BG part4"></div>
+      <div><img src="images/slider/bilibili-autumn-6.png" alt="BG part5"></div>
+</header><br>
+	<script>
+      const images = document.querySelectorAll('header > div > img')
+      
+      document.querySelector('header').addEventListener('mousemove', (e) => {
+        let percentage = e.clientX / window.outerWidth
+        let offset = 10 * percentage
+        let blur = 20
+        
+        for (let [index, image] of images.entries()) {
+          offset *= 1.3
+          let blurValue = (Math.pow((index / images.length - percentage), 2) * blur)
+          image.style.setProperty('--offset', `${offset}px`)
+          image.style.setProperty('--blur', `${blurValue}px`)
+        }
+      }) 
+    </script>
+	
+	<div class="scrollpic">
+	<div id="mybtns"><span style="color: aliceblue; font-weight: bold; font-size: 20px; ">创作团队</span></div>
+	<div id="mycontent">
+	<div id="myscroll">
+	恭喜雪狐桑十万粉丝达成！<br>
+企划 亚里士多德 tamamo<br>
+后期 冷焰 亚里士多德<br>
+《这姑娘》 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  01:21 ——“墨班、懒、淡定、雪耗子、子虚乌有、时羽梦花”<br>
+《达拉崩吧》&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06:45 ——“淡定桑、星歌、亚里士多德、（一堆人）”<br>
+《十万粉不咕回》&nbsp;11:03 ——“冷焰、星歌、Marvol”<br>
+《狐宝》&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	13:10 ——“星歌、亚里士多德”<br>
+《时光盲盒》&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18:20 ——“亚里士多德、雪饼、茯苓茶、军师、寒风、轻语岚枫”<br>
+《VUP祝福》&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;穿插 ——“雪狐老婆们、亚里士多德、冬狐、啾啾、冷焰”<br>
+《粉丝贺词》&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26:07 ——“雪狐咕们、亚里士多德”<br>
+非常感谢所有参与本次节目制作的雪狐咕们半年以来的付出！这次虽有一些遗憾，但我们会继续努力的！
+	</div>
+	</div>
+</div>
+	<br>
+	<!--贺图区-->
+	<div class="scrollpic">
+	<div id="mybtns"><span style="color: aliceblue; font-weight: bold; font-size: 20px; ">贺图 </span></div>
+    <div class="main1">
+        <div class="w-newsList w-newsList1 clearfix" id="newsList1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="news-item"><a class="clearfix">
+                        <div class="news-imgbox img-count"><div class="aspectRatio"></div><div class="img-count-in"><img src="images/paint/01.png"></div></div>
+                        <div class="news-text">
+                            <div class="news-h">01_ling伊</div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-item"><a class="clearfix">
+                        <div class="news-imgbox img-count"><div class="aspectRatio"></div><div class="img-count-in"><img src="images/paint/02.jpg"></div></div>
+                        <div class="news-text">
+                            <div class="news-h">秘法会长</div>
+                        </div>
+                    </a></div>
+                </div>
+				<div class="swiper-slide">
+                    <div class="news-item"><a class="clearfix">
+                        <div class="news-imgbox img-count"><div class="aspectRatio"></div><div class="img-count-in"><img src="images/paint/03.png"></div></div>
+                        <div class="news-text">
+                            <div class="news-h">冷焰</div>
+                        </div>
+                    </a></div>
+                </div>
+            </div>
+            <div class="adSN_page"></div>
+            <div class="swiper-num">
+                <span class="active"></span>/
+                <span class="total"></span>
+            </div>
+        </div>
+		</div>
+        <script type="text/javascript">
+        $(function(){
+            /*图片位置计算*/
+            var imgCount = function () {
+                $('.img-count').each(function (index, element) {
+                    var imgH = $(this).height();
+                    var imgW = $(this).width();
+                    var $thisimg = $(this).find('img');
+                    var img = new Image();
+                    img.onload = function () {
+                        if ($thisimg.data("img") === false) {
+                            return '';
+                        }
+                        var imgWidth = img.width;
+                        var imgHeight = img.height;
+                        if ((imgWidth / imgHeight) < (imgW / imgH)) {
+                            $thisimg.css({'height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'max-height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'top': -((imgW / imgH) * ((imgHeight * 1.00) / imgWidth) - 1) / 2 * imgH})
+                        } else {
+                            $thisimg.css({'width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'max-width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'left': -((imgH / imgW) * ((imgWidth * 1.00) / imgHeight) - 1) / 2 * imgW})     
+                        }
+                    }
+                    img.src = $thisimg.attr("src");
+                });
+            }
+            
+            //滚动设置
+            var swiper = new Swiper('#newsList1', {
+                effect : 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                },
+                direction : 'horizontal',
+                loop: true,
+                autoplay : {
+                    delay:5000,//滚动速度
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.adSN_page',
+                    clickable :true,
+                },
+                on:{
+                    init:function(){
+                        var total=this.slides.length-2;
+                        $('.swiper-num .total').text('0'+total);
+                        this.emit('transitionEnd');
+                    },
+                    transitionEnd:function(){
+                        var index=this.realIndex+1;
+                        $(".swiper-num .active").text("0"+index);
+                    }
+                }
+            });
+
+            imgCount();
+            $(window).resize(function () {
+                imgCount();
+            });
+        });
+        </script> 
+    </div>
+	<!--贺词区-->
+	<br>
+	<div class="scrollpic">
+	<div id="mybtns"><span style="color: aliceblue; font-weight: bold; font-size: 20px; ">贺词 </span></div>
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/jiujiu.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>啾啾</div>
+			</div>
+			<div class="content">
+			 从狐狐三千粉开始关注狐狐，直到现在狐狐都十万粉啦！狐狐真的太厉害了！mua～
+希望狐狐以后能够干自己想干的事情，玩自己想玩的游戏，去勇敢的完成自己的梦想~
+祝愿这只狐狸今后能够自由快乐~
+
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/moban.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>墨班</div>
+			</div>
+			<div class="content">
+			 墨班祝雪狐十万粉快乐，希望雪狐做大做强，创造辉煌，好耶
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/Marvol.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>Marvol-</div>
+			</div>
+			<div class="content">
+			 都十万粉了希望备用口粮的后脑勺不会再磕痛
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/fulingcha.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>茯苓茶</div>
+			</div>
+			<div class="content">
+			 恭喜雪狐十万粉啦！希望狐狐能越做越好越走越远～
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/donghu.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>冬天的雪狐</div>
+			</div>
+			<div class="content">
+			 只要一看到雪狐，一听到雪狐的声音，我就忍不住喜欢，所以雪狐十万粉我一点也不意外呢！雪狐加油！恭喜十万粉！希望雪狐能一直自由快乐！
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/haozi.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>屑耗子</div>
+			</div>
+			<div class="content">
+			 耗子变得这么屑怎么想都是狐狐的错！屑狐狸，屑，屑，屑！
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/jitang.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>纪棠</div>
+			</div>
+			<div class="content">
+			 好耶 既然屑狐10w粉了 那我也算老粉了 身为一个anti头子 我必须继续支持鸽鸽 茶茶贴贴（bushi）
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/wanwan.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>挽挽</div>
+			</div>
+			<div class="content">
+			 雪狐狐十万粉丝快乐！以后也会一直陪着你的！
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/xuegusang.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>雪孤桑</div>
+			</div>
+			<div class="content">
+			 雪孤桑祝狐狐10w粉成就达成，希望可以一直陪狐狐走下去～
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/xingge.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>星歌_SOS</div>
+			</div>
+			<div class="content">
+			 祝雪狐福如东海长流水，寿比南山不老松。年年有今日，岁岁有今朝。饭后百步走，活到九百九十九
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/mifahuizhang.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>秘法会长</div>
+			</div>
+			<div class="content">
+			 恭喜阿狐十万粉啊，祝今后直播顺利，作为老anti还会继续为萨摩小姐服务的（狗头）
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/xingkongziyan.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>星空紫炎</div>
+			</div>
+			<div class="content">
+			 雪狐大人天下第一！！！
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/yunmu.png" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>云牧</div>
+			</div>
+			<div class="content">
+			 其实想了想，下面这段歌词更能表达我的想法w<br><br>“流动的时间有时向阳 有时背阴<br>
+脑中的拍立得捕捉着划过的流星<br>
+最得意的时光是文字描绘你<br>
+是飞向克里特岛与你 沉睡海底<br>
+太阳用八分钟时间向地球挥洒光线<br>
+你是我的百分百<br>
+像柏拉图的《盛宴》<br>
+心是孤独的猎手 鲜花在胸口蔓延<br>
+在遇见 你的瞬间 出现 像神话般圣殿”<br>
+<br>
+狐狐十万粉快乐！
+			</div> 
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/shiyumenghua.jpg" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>时羽梦花</div>
+			</div>
+			<div class="content">
+			恭喜雪狐十万粉鸭~从“这个雪狐涩不起来”关注的，感觉雪狐风韵犹存，祝雪狐越来越好，心想事成~啾咪
+			</div> 
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/touxiang.jpg" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>冷焰</div>
+			</div>
+			<div class="content">
+			多德，我的超人
+			</div> 
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->
+	<!-- circle start-->
+	<div class="cb">
+		<div class="item">
+		  <div class="photo"><img class="photo" src="images/cb/duode.jpg" alt="photo"></div>
+		  <div class="text">
+			<div class="title">
+			  <div>亚里士多德</div>
+			</div>
+			<div class="content">
+			 冷焰，我的超人
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- circle end-->	
+		</div>
+	</div>
+	</div>
+	<!--右侧视频列表-->
+	<div class="right">
+		<div class="list">
+			<ul class="parentWrap">
+    	<li class="menuGroup">
+        <span class="groupTitle">正片</span>
+		<div class="togvideo">
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E9%9B%AA%E7%8B%90%E7%BA%AA.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/zhengpian.jpg" alt="封面"><span>10W粉丝雪狐纪</span></div>
+					</button>
+					</div>
+			
+		</div>
+    </li>
+    <li class="menuGroup">
+        <span class="groupTitle">单品</span>
+        <div class="togvideo">
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E8%BE%BE%E6%8B%89%E5%B4%A9%E5%90%A7.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/dalabengba.jpg" alt="封面"><span>达拉崩吧</span></div>
+					</button>
+					</div>
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E8%BF%99%E5%A7%91%E5%A8%98.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/zheguniang.jpg" alt="封面"><span>这姑娘</span></div>
+					</button>
+					</div>
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E5%8D%81%E4%B8%87%E7%B2%89%E4%B8%8D%E5%92%95%E5%9B%9E.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/shiwanfen.jpg" alt="封面"><span>十万粉不咕回</span></div>
+					</button>
+					</div>
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E7%8B%90%E5%AE%9D.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/hubao.jpg" alt="封面"><span>狐宝</span></div>
+					</button>
+					</div>
+			<div class="model1">
+					<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E6%97%B6%E5%85%89%E7%9B%B2%E7%9B%92.mp4" onclick="test(this)">
+						<div class="singlevideo"><img src="media/celebrate/fengmian/shiguangmanghe.jpg" alt="封面"><span>时光盲盒</span></div>
+					</button>
+					</div>
+		</div>
+    </li>
+    <li class="menuGroup">
+        <span class="groupTitle">祝福</span>
+		<div class="togvideo">
+      		<div class="model1">
+       		<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8E%89%E5%A8%85.mp4" onclick="test(this)">
+        		<div class="singlevideo"><img src="media/celebrate/fengmian/liya.jpg" alt="封面"><span>奈奈莉娅Channel</span></div>
+        	</button>
+        	</div>
+        	<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E9%BB%8E%E6%AD%8C.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/lige.jpg" alt="封面"><span>黎歌Neeko_channel</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E7%BA%B1%E9%9F%B3.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/shayin.jpg" alt="封面"><span>纱音_Syanon</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E5%A4%B4%E5%8F%91%E9%BA%BB%E9%BA%BB.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/toufa.jpg" alt="封面"><span>咦我的头发呢</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%B4%9D%E8%92%82.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/beidi.jpg" alt="封面"><span>贝蒂-Betty</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E5%85%94%E5%85%94.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/tutu.jpg" alt="封面"><span>夕兔_H2</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E7%B4%97%E8%80%B6.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/shaye.jpg" alt="封面"><span>紗耶_sayako</span></div>
+        	</button>
+			</div>
+			<div class="model1">
+        	<button class="presslist" id="button" value="https://video-1304928586.file.myqcloud.com/%E8%8A%82%E7%9B%AE/%E7%B2%89%E4%B8%9D%E8%B4%BA%E8%AF%8D.mp4" onclick="test(this)">
+				<div class="singlevideo"><img src="media/celebrate/fengmian/fensi.jpg" alt="封面"><span>雪狐咕们</span></div>
+        	</button>
+			</div>
+		</div>
+    </li>
+</ul>
+		</div>
+		<div class="recommend">
+			<div class="font1">相关推荐</div>
+			<a href="https://www.bilibili.com/video/BV1Yy4y1z7SZ" target="_blank"><img style="width: 260px; margin-top: 16px;
+	 margin-bottom: 15px;
+	 margin-left: 20px;
+	 margin-right: 20px;" src="images/recommend.jpg" alt="推荐"></a>
+			</div>
+		</div>
+	</div>
+<img src="images/totop.png" class="to-top" title="返回顶部" alt="返回顶部">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.toTop.min.js"></script>
+<script>$('.to-top').toTop();</script>
+
+<style> 
+.video-js .vjs-tech {position: relative !important;}
+ .video-js .vjs-time-control{display:block;}
+.video-js .vjs-remaining-time{display: none;}
+</style>
+</body><br>
+
+<footer class="footer">
+<hr>	<br>
+Copyright&copy;2021 xuehusang. All right Reserved.
+</footer>
+	<script>
+	$('.menuGroup .groupTitle').on('click', function() {
+    $(this).siblings().show().parent().siblings().children('div').hide();
+});
+	</script>
+</html>
