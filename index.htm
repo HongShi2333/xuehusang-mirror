@@ -1,0 +1,1290 @@
+﻿<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="雪狐冰屋是雪狐桑的个人网站，致力为广大雪狐粉丝提供最新信息，其中包括棉花糖、视频、壁纸以及粉丝向小游戏等信息，不定时更新，是雪狐桑对外展示平台之一" name="description">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="雪狐桑,雪狐冰屋,雪狐桑个人网站,雪狐桑是谁,雪狐桑简介,虚拟主播,vtuber,VUP,虚拟up,个人网站,雪狐桑壁纸" name="Keywords">
+    <title>雪狐冰屋 - 雪狐桑的个人网站</title>
+    <style>
+        html {
+            cursor: url("assets/images/cursor/4Yrvqb.gif"), auto;
+        }
+
+        a:hover {
+            cursor: url("assets/images/cursor/WulhPd.gif"), auto !important;
+        }
+
+        button {
+            cursor: url("assets/images/cursor/WulhPd.gif"), auto !important;
+        }
+
+        dt {
+            cursor: url("assets/images/cursor/WulhPd.gif"), auto !important;
+        }
+    </style>
+    <style>
+        .container {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+    </style>
+    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/LineIcons.css" rel="stylesheet">
+    <link href="assets/css/style_202212192142.css" rel="stylesheet">
+    <!--	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">-->
+    <link href="css/swiper1.css" rel="stylesheet" type="text/css">
+    <link href="css/jq22.css" rel="stylesheet" type="text/css">
+    <link href="css/layerslider.css" rel="stylesheet">
+    <link href="css/qa.css" rel="stylesheet">
+    <link href="css/APlayer.min.css" rel="stylesheet">
+    <link href="css/live2d.css" rel="stylesheet">
+    <link href="assets/css/jquery.button-audio-player.css" rel="stylesheet">
+    <script charset="utf-8" src="js/swiper.min.js" type="text/javascript"></script>
+    <script src="js/vue.global.prod.js"></script>
+
+    <!-- MMD LOAD -->
+    <script src="js/three.js"></script>
+    <script src="js/MMDToonShader.js"></script>
+    <script src="js/mmdparser.js"></script>
+    <script src="js/TGALoader.js"></script>
+    <script src="js/OutlineEffect.js"></script>
+    <script src="js/MMDLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+</head>
+<!--
+	<script src="js/protect.js" ></script>
+-->
+<!--三联按钮防右侧超出-->
+<style>
+    @media (max-width: 450px) {
+        .triple-btn {
+            padding: 0 20px;
+        }
+    }
+</style>
+<!--直播按钮扫光css-->
+<style>
+    a.shiny {
+        -webkit-animation: shine 8s infinite;
+        animation: shine 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+
+    @-webkit-keyframes shine {
+        50% {
+            text-shadow: none;
+        }
+        75% {
+            text-shadow: rgba(255, 255, 255, 0.25) 0 0 2px, rgba(255, 255, 255, 0.25) 0 0 5px, rgba(255, 255, 255, 0.25) 0 0 7px, rgba(255, 255, 255, 0.25) 0 0 10px, rgba(255, 255, 255, 0.25) 0 0 15px, rgba(255, 255, 255, 0.25) 0 0 20px, rgba(255, 255, 255, 0.25) 0 0 15px, rgba(255, 255, 255, 0.25) 0 0 20px, 2px 2px 2px rgba(113, 72, 206, 0);
+        }
+        100% {
+            text-shadow: rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 20px, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0, 0 0 0 rgba(113, 72, 206, 0);
+        }
+    }
+
+    @keyframes shine {
+        50% {
+            text-shadow: none;
+        }
+        75% {
+            text-shadow: rgba(255, 255, 255, 0.25) 0 0 2px, rgba(255, 255, 255, 0.25) 0 0 5px, rgba(255, 255, 255, 0.25) 0 0 7px, rgba(255, 255, 255, 0.25) 0 0 10px, rgba(255, 255, 255, 0.25) 0 0 15px, rgba(255, 255, 255, 0.25) 0 20px, rgba(255, 255, 255, 0.25) 0 0 15px, rgba(255, 255, 255, 0.25) 0 0 20px, 2px 2px 2px rgba(113, 72, 206, 0);
+        }
+        100% {
+            text-shadow: rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 20px, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, rgba(255, 255, 255, 0.25) 0 0 0, 0 0 0 rgba(113, 72, 206, 0);
+        }
+    }
+</style>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+    }
+
+    img {
+        width: 100%;
+    }
+
+    /* css定义分页，导航按钮颜色 */
+
+    #case6 img, #case7 img {
+        transform: scale(0.7);
+    }
+
+    small {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    /*  Model Preview */
+    img.Model {
+        opacity: 0.4;
+        transition: all 0.4s ease-out 0s;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    img.Model:hover {
+        opacity: 1;
+        transition: all 0.4s ease-out 0s;
+    }
+
+</style>
+<!--live2d-->
+<!-- Pollyfill script -->
+<script src="js/minified.js"></script>
+<!-- Live2DCubismCore script -->
+<script src="js/live2dcubismcore.js"></script>
+<!-- Build script -->
+<script src="js/bundle.js"></script>
+<!--时间线必要运行js-->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jq22.js" type="text/javascript"></script>
+<script src="js/index_202207171734.js"></script>
+<!--鼠标点击效果-->
+<link href="assets/css/solid.css" rel="stylesheet">
+<link href="assets/css/fontawesome.css" rel="stylesheet">
+<link href="assets/css/calendar.css" rel="stylesheet">
+<body>
+<div class="live2d-main">
+    <div class="live2d-tips"></div>
+    <canvas id="live2d" class="live2d" height="360" width="360"></canvas>
+    <div class="tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<div class="preloader">
+    <div class="loader_34">
+        <img alt="加载中" src="images/gif/9.gif">
+        <p>慢慢走比较快</p>
+    </div>
+</div>
+<header id="home" class="header-area">
+    <div class="navigation fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img alt="igloo Logo" src="assets/images/igloo-logo.png" style="width: 200px;">
+                        </a>
+                        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">主页</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#photo">壁纸</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#model">模型</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#reward">福利</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="brief.html">简介</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#qa">棉花糖</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#work">视频</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#blog">游戏</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="https://song.xuehusang.cn/">歌单</a>
+                                </li>
+                                <li class="nav-item"><a class="page-scroll" href="https://rec.xuehusang.cn/">路灯</a>
+                                </li>
+                                <li class="nav-item"><a class="page-scroll" href="https://m.xuehusang.cn/">歌切</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parallax" class="header-content d-flex align-items-center">
+        <div class="header-shape shape-one layer" data-depth="0.10"><img alt="时钟" src="assets/images/banner/shape/shape-1.png">
+        </div>
+        <div class="header-shape shape-tow layer" data-depth="0.30"><img alt="桃子" src="assets/images/banner/shape/shape-2.png" title="左边桃子自取"></div>
+        <div class="header-shape shape-three layer" data-depth="0.40"><img alt="线条" src="assets/images/banner/shape/shape-3.png">
+        </div>
+        <div class="header-shape shape-fore layer" data-depth="0.60"><img alt="桃子" src="assets/images/banner/shape/shape-2.png" title="左边桃子自取"></div>
+        <div class="header-shape shape-five layer" data-depth="0.20"><a href="develop/index.htm" target="_blank" title="诶嘿这表能动"><img alt="时钟" src="assets/images/banner/shape/shape-1.gif"> </a></div>
+        <div class="header-shape shape-six layer" data-depth="0.15"><img alt="雪狐咕" src="assets/images/banner/shape/shape-4.png">
+        </div>
+        <div class="header-shape shape-eight layer" data-depth="0.40"><img alt="线条" src="assets/images/banner/shape/shape-3.png">
+        </div>
+        <div class="header-shape shape-nine layer" data-depth="0.20"><img alt="狐牙" src="assets/images/banner/shape/shape-6.png" title="嗷呜~"></div>
+        <div class="header-shape shape-ten layer" data-depth="0.30" data-target="#icecream" data-toggle="modal"><img alt="雪狐冰淇淋" src="assets/images/banner/shape/shape_20220726.png"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="header-content-right">
+                        <h4 class="sub-title">欢迎来到</h4>
+                        <h1 class="title">雪狐冰屋<span class="badge badge-info" style="font-size: 15px;">3D模型配布</span>
+                        </h1>
+                        <p id="randomword"></p>
+
+                        <div class="3to1">
+                            <h4 id="fensi" class="div-inline ml-1"></h4>
+                        </div>
+                        <div class="btn-group ork-more text-center mt-10" role="group" style="float: left;">
+                            <a class="btn sec-btn main-btn triple-btn " href="https://pic.xuehusang.cn/" target="_blank" type="button" style="padding-left: 25px;padding-right: 20px;">粉丝壁纸</a>
+                            <a class="sec-btn btn main-btn triple-btn" href="cafe/index.htm" target="_blank" type="button" style="padding-left: 20px;padding-right: 25px;">舰长礼物</a>
+                        </div>
+                        <div style="float: left;margin-left: 10px;margin-top: 10px;">
+                            <a class="sec-btn main-btn page-scroll" href="#calendar">直播日历</a>
+                        </div>
+                        <!--                        暂时下线的实时检测直播按钮-->
+                        <!--                        <div style="float: left;">-->
+                        <!--                            <a id="LiveTitle" class="main-btn"-->
+                        <!--                               href="" style="margin-top: 10px;float: none" target="_blank"></a>-->
+                        <!--                            <div id="WatchedNum"-->
+                        <!--                                 style="position: absolute;right: 20%;top:100%;z-index: 10;background-color: #fab7b1;border-radius: 5px;color: white;font-size: 5px;width: fit-content;padding:1px 5px 0 5px;display: none;"></div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="header-image d-none d-lg-block"><img alt="雪狐桑立绘" src="assets/images/banner/banner_202306352249.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    //fixme: status check correctly but display logic wrong
+    <!--live status check-->
+    // function LiveStatusCheck() {
+    //     var ajax = new XMLHttpRequest();
+    //     ajax._url = "https://api.xuehusang.cn/LiveStatus";
+    //     ajax.open("GET", ajax._url, true);
+    //
+    //     ajax.send(null);
+    //     ajax.onreadystatechange = function () {
+    //         if (ajax.readyState = 4) {
+    //             let ajax_b = ajax.responseText;
+    //             let ajax_c = JSON.parse(ajax_b);
+    //             if (ajax_c.Status = 1) {
+    //                 let live_title = document.getElementById("LiveTitle");
+    //                 let live_watched = document.getElementById("WatchedNum");
+    //                 live_watched.innerHTML = ajax_c.watched + "人看过";
+    //                 live_title.innerHTML = "直播中 | " + ajax_c.title;
+    //                 document.getElementById("LiveTitle").style.padding = "0 20px";
+    //                 document.getElementById("LiveTitle").href = "https://live.bilibili.com/24393";
+    //                 // document.getElementById("LiveTitle").className = "main-btn shiny";
+    //             } else {
+    //                 document.getElementById("WatchedNum").style.display = "none";
+    //             }
+    //         }
+    //     }
+    //     setTimeout(() => {
+    //         LiveStatusCheck();
+    //     }, 120000)
+    // }
+
+    // LiveStatusCheck();
+</script>
+<section id="calendar" class="photo-area pt-40 pb-20">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">直播日历</h2>
+                </div>
+            </div>
+            <!--      calendar start      -->
+            <div id="calendarApp">
+                <!--                <div v-if="this.liveStatus" class="liveLine">-->
+                <!--                    <h4 style="display: flex;"><span class="badge badge-danger">直播中</span>&nbsp;<a-->
+                <!--                            href="https://live.bilibili.com/24393" target="_blank" class="liveLink">{{ this.liveTitle-->
+                <!--                        }}</a></h4>-->
+                <!--                </div>-->
+                <!--                <div class="explain"><p style="color: #E6C5D2;">█ 确定播</p>-->
+                <!--                    <p>&nbsp;&nbsp;&nbsp;</p>-->
+                <!--                    <p style="color: #B6DAF5;">█ 可能播</p></div>-->
+                <div class="row">
+                    <div class="col-12 col-xl-1 col-sm-12 lastWeek">
+                        <button v-show="lastWeekButton" class="lastWeekButton" @click="queryCal(this.week-1)"></button>
+                    </div>
+                    <div class="col-12 col-xl-10" style="padding-left: 10px; padding-right: 10px;user-select: none;">
+                        <div v-for="item in fillCalendarData" id="calendarRow" :style="certaintyCssConvert(item.certainty, item.streamDay)">
+                            <div id="dateAndTime">
+                                <div id="day" v-if="item.certainty !== 2">{{ streamDayConvert(item.streamDay) }}</div>
+                                <div id="dayOf404" v-if="item.certainty === 2">{{ streamDayConvert(item.streamDay) }}
+                                </div>
+                                <div id="date">{{ item.streamDate }}</div>
+                                <div id="time">{{ item.streamTime }}</div>
+                            </div>
+                            <div style="border:0.5px solid #5a6268; float:left; height:50px;"></div>
+                            <div class="certainty-box">
+                                <div class="certainty" :style="certaintyBadgeCssConvert(item.certainty)">
+                                    {{certaintyBadgeContentConvert(item.certainty)}}
+                                </div>
+                            </div>
+                            <div>
+                                <div id="streamType" v-if="item.certainty !== 2">
+                                    <img id="streamTypeImg" :src="streamTypePic(item.streamType)" alt="直播类型">
+                                </div>
+                            </div>
+                            <div id="streamDetail">{{ item.streamDetail }}</div>
+                            <div id="stream404" v-if="item.certainty === 2">{{random404()}}</div>
+                            <!--                            <div id="streamer"-->
+                            <!--                                 :style="{transform: 'translateX(' + (item.streamer.index) * 35 + 'px)' }">-->
+                            <div id="streamer" v-if="item.certainty !== 2">
+                                <div class="streamerList">
+                                    <img id="streamerAvatar" src="images/2023/03/07/a8897b071a8321fc813ad4b83f16fc4098e1562d.jpg" alt="主播头像">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="noContent" v-show="noCal">
+                            <div>{{titleConvert(this.week)}}暂无直播安排</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-1 col-sm-12 nextWeek">
+                        <button v-show="nextWeekButton" class="nextWeekButton" @click="queryCal(this.week+1)"></button>
+                    </div>
+                </div>
+                <span>日历仅供参考，内容随时可能变动，开播以群内通知为准</span>
+                <span>禁言通知群: 704319620</span>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const {createApp} = Vue;
+    createApp({
+        data() {
+            return {
+                calendarData: null,
+                noCal: true,
+                nextWeekButton: true,
+                lastWeekButton: true,
+                week: 1,
+                liveStatus: false,
+                liveTitle: "",
+                fillCalendarData: [],
+                random404Word: [
+                    "正在学习如何摸鱼", "锻造钢板ing", "加班TvT", "今日无狐", "正在建造冰屋", "或许在疯狂还债", "休息一下ww", "自行脑补一行字", "一位测试工程师点了碗炒饭", "不播", "不播", "遇到困难 睡大觉", "时长~我的时长~"
+                ]
+            }
+        },
+        created() {
+            this.queryCal(1)
+            // this.queryLive()
+        },
+        methods: {
+            queryCal(week) {
+                let getCal = new XMLHttpRequest();
+                if (week === 1) { // 当前周
+                    getCal._url = "https://api.xuehusang.cn/calendar/weekInfo";
+                    this.lastWeekButton = true
+                    this.nextWeekButton = true
+                } else if (week === 2) { // 当前周的下一周
+                    getCal._url = "https://api.xuehusang.cn/calendar/weekInfo/nextWeek"
+                    this.nextWeekButton = false;
+                } else if (week === 0) { // 当前周的上一周
+                    getCal._url = "https://api.xuehusang.cn/calendar/weekInfo/lastWeek"
+                    this.lastWeekButton = false;
+                }
+                this.week = week;
+                getCal.open("GET", getCal._url, false);
+                // getCal.send(null);
+                let temp = null;
+                getCal.onreadystatechange = function () {
+                    if (getCal.readyState === 4) {
+                        temp = JSON.parse(getCal.responseText);
+                    }
+                }
+                getCal.send(null);
+                if (temp.code != null) {
+                    if (temp.code === 0) {
+                        this.noCal = true
+                        this.calendarData = null
+                        this.fillCalendarData = []
+                    }
+                } else {
+                    this.noCal = false;
+                    this.calendarData = temp;
+                    this.fillCal()
+                }
+            },
+            queryLive() {
+                let getLive = new XMLHttpRequest();
+                getLive._url = "https://api.xuehusang.cn/LiveStatus";
+                let tmpStatus;
+                let tmpTitle;
+                getLive.open("GET", getLive._url, false);
+                getLive.onreadystatechange = function () {
+                    let tmp = getLive.responseText;
+                    let tmp_z = JSON.parse(tmp)
+                    tmpStatus = tmp_z.liveStatus;
+                    tmpTitle = tmp_z.title;
+                }
+                getLive.send(null);
+                this.liveStatus = tmpStatus;
+                this.liveTitle = tmpTitle;
+            },
+            /**
+             * @param num - 后端返回直播类型：0杂谈，1游戏，2自习，3联动，4纪念回，5歌回，6不确定
+             * @property iconUrlList - icon对应地址
+             */
+            streamTypePic(num) {
+                const iconUrlList = [
+                    'images/calendar-icon/chat.svg',
+                    'images/calendar-icon/game.svg',
+                    'images/calendar-icon/study.svg',
+                    'images/calendar-icon/collaborate.svg',
+                    'images/calendar-icon/celebrate.svg',
+                    'images/calendar-icon/chat.svg',
+                    'images/calendar-icon/chat.svg'
+                ]
+                return iconUrlList[num]
+            },
+            streamDayConvert(day) {
+                const CHN = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                return CHN[day - 1]
+            },
+            certaintyCssConvert(num, date) {
+                const today = Math.ceil((new Date().getDay() + 6.5) % 7)
+                let css = "";
+                if (num === 1) {
+
+                } else if (num === 2) { // 无安排
+                    css = css + "background-color: #F5F5F5;"
+                }
+                if (this.week === 1) {
+                    if (date === today) {
+                        css = css + "outline: solid 3px #37627A;"
+                    }
+                }
+                return css
+            },
+            certaintyBadgeCssConvert(certainty) {
+                if (certainty === 1) {
+                    return "color: rgb(79, 139, 174);border: solid 1px rgb(79, 139, 174) !important;font-weight: 900;background-color: #BBE3FA;"
+                } else if (!!certainty) {
+                    return "display:none !important;"
+                } else return null
+            },
+            certaintyBadgeContentConvert(certainty) {
+                if (certainty === 0) {
+                    return "不确定"
+                } else if (certainty === 1) {
+                    return "确定播"
+                } else return null
+            },
+            titleConvert(week) {
+                if (week === 1) { // 当前周
+                    return "本周"
+                } else if (week === 2) { // 当前周的下一周
+                    return "下周"
+                } else if (week === 0) { // 当前周的上一周
+                    return "上一周"
+                }
+            },
+            fillCal() {
+                this.fillCalendarData = []
+                let d = 1;
+                for (let i = 0; ;) {
+                    if (d > 7) {
+                        if (this.calendarData[i] !== undefined) {
+                            this.fillCalendarData.push(this.calendarData[i])
+                            i++
+                            continue
+                        } else {
+                            break
+                        }
+                    }
+                    try {
+                        if (this.calendarData[i].streamDay === d) {
+                            this.fillCalendarData.push(this.calendarData[i])
+                            d++
+                            i++
+                        } else if (this.calendarData[i].streamDay === (d - 1)) {
+                            this.fillCalendarData.push(this.calendarData[i])
+                            i++
+                        } else {
+                            this.fillCalendarData.push({"certainty": 2, "streamDay": d})
+                            d++
+                        }
+                    } catch (error) {
+                        this.fillCalendarData.push({"certainty": 2, "streamDay": d})
+                        d++
+                    }
+                }
+            },
+            random404() {
+                let len = this.random404Word.length
+                return this.random404Word[Math.floor(Math.random() * (len - 1))];
+            }
+        }
+    }).mount('#calendarApp')
+</script>
+<section id="photo" class="photo-area pt-40 pb-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="section-title pb-25">
+                    <h2 class="title">壁纸/表情包</h2>
+                    <p>更多壁纸请至<a class="channel" href="https://pic.xuehusang.cn" target="_blank">图片站</a>~</p>
+                </div>
+            </div>
+            <!--slider starts-->
+            <div id="slider" style="width:100%;">
+                <div id="layerslider_4" class="ls-wp-container" style="width: 100%; height: 600px; max-width: 1200px; margin: 0 auto;">
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t30.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t21.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t22.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t23.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t20.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t18.jpg">
+                    </div>
+                    <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img alt="雪狐桑壁纸" class="ls-bg" src="images/t17.jpg">
+                    </div>
+                </div>
+                <script src="js/layerslider.kreaturamedia.jquery.js"></script>
+                <script src="js/layerslider.transitions.js"></script>
+                <script src="js/greensock.js"></script>
+                <script type="text/javascript">
+                    var lsjQuery = jQuery;
+                </script>
+                <script type="text/javascript">
+                    lsjQuery(document).ready(function () {
+                        if (typeof lsjQuery.fn.layerSlider == "undefined") {
+                            lsShowNotice('layerslider_1', 'jquery');
+                        } else {
+                            lsjQuery("#layerslider_4").layerSlider({
+                                responsiveUnder: 800,
+                                layersContainer: 600,
+                                skinsPath: './layerslider/skins/',
+                                autoStart: true,
+                                navStartStop: false,
+                                responsive: true,
+                                hoverPrevNext: false,
+                                thumbnailNavigation: false
+                            });
+                        }
+                    });
+                    lsjQuery('#layerslider_4').layerSlider('pause');
+                </script>
+                <div class="one">
+                    <ul>
+                        <li><a href="images/full-size/0.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/0.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/1.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/1.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/2.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/2.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/3.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/3.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/4.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/4.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/5.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/5.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/6.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/6.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/7.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/7.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/8.jpg" target="_blank"><img alt="雪狐桑表情包" src="images/gif/8.jpg"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/9.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/9.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/10.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/10.gif"><span>点击加载大图</span></a>
+                        </li>
+                        <li><a href="images/full-size/11.gif" target="_blank"><img alt="雪狐桑表情包" src="images/gif/11.gif"><span>点击加载大图</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work-more text-center mt-15 mb-15">
+                    <div class="btn-group ork-more text-center mt-30 mb-50" role="group">
+                        <a class="btn btn-secondary main-btn triple-btn" href="https://pic.xuehusang.cn" target="_blank" type="button">更多壁纸</a>
+                        <a class="btn btn-secondary main-btn triple-btn" href="https://pic.xuehusang.cn/动态壁纸/" target="_blank" type="button">动态壁纸</a>
+                        <a class="btn btn-secondary main-btn triple-btn" href="https://pic.xuehusang.cn/表情包/" target="_blank" type="button">更多表情</a>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        var box0 = $(".one"), v0 = 1.9; //这里添加滚动的对象和其速率
+                        var box1 = $(".two"), v1 = 1;
+                        Rin(box0, v0);
+                        Rin(box1, v1);
+
+                        function Rin($Box, v) {//$Box移动的对象，v对象移动的速率
+                            var $Box_ul = $Box.find("ul"),
+                                $Box_li = $Box_ul.find("li"),
+                                $Box_li_span = $Box_li.find("span"),
+                                left = 0,
+                                s = 0,
+                                timer;//定时器
+
+                            $Box_li.each(function (index) {
+                                $($Box_li_span[index]).width($(this).width());//hover
+                                s += $(this).outerWidth(true); //即要滚动的长度
+                            })
+
+                            window.requestAnimationFrame = window.requestAnimationFrame || function (Tmove) {
+                                return setTimeout(Tmove, 1000 / 60)
+                            };
+                            window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+                            if (s >= $Box.width()) {//如果滚动长度超出Box长度即开始滚动，没有的话就不执行滚动
+                                $Box_li.clone(true).appendTo($Box_ul);
+                                Tmove();
+
+                                function Tmove() {
+                                    //运动是移动left  从0到-s;（个人习惯往左滚）
+                                    left -= v;
+                                    if (left <= -s) {
+                                        left = 0;
+                                        $Box_ul.css("left", left)
+                                    } else {
+                                        $Box_ul.css("left", left)
+                                    }
+                                    timer = requestAnimationFrame(Tmove);
+                                }
+
+                                $Box_ul.hover(function () {
+                                    cancelAnimationFrame(timer)
+                                }, function () {
+                                    Tmove()
+                                })
+                            }
+
+                        }
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="model" class="blog-area pt-40 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-10">
+                    <h2 class="title">模型配布</h2>
+                    <p>左键拖拽旋转，滚轮或双指缩放，右键拖拽</p>
+                </div>
+            </div>
+        </div>
+        <img onclick="startRender()" src="assets/images/model_preview.jpg" class="Model" id="mask-img" alt="模型预览封面">
+        <div id="webgl" style="width: 100%;"></div>
+        <div class="work-more text-center pt-10">
+            <div class="main-btn" data-target="#warningModal" data-toggle="modal">下载模型</div>
+        </div>
+    </div>
+</section>
+<div id="warningModal" aria-hidden="true" aria-labelledby="warningModalLabel" class="modal fade " tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="warningModalLabel" class="modal-title">版权声明</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="font-size: 14pt;line-height: 17pt;">
+                欢迎下载 雪狐3D MMD模型，下载则代表你已知晓并同意遵守以下协议：
+                <br><br>
+                此模型版权归 哔哩哔哩@雪狐桑 所有。
+                <br><br>
+                【注意事项】<br>
+                1.该资源版权属于雪狐桑。<br>
+                2.该资源为公开资源，使用者产生的任何不良后果自行负责。<br>
+                3.该资源允许在合法的非商业视频中使用，但需要在作品显著位置注明模型名称与模型出处，例：<br>
+                model：雪狐3D（https://xuehusang.cn)<br>
+                <br>
+                <strong>本模型禁止任何商业使用，否则将追究法律责任。</strong><br>
+                <br>
+                【禁止事项】<br>
+                1.禁止将此模型用于商业用途<br>
+                2.禁止二次配布<br>
+                3.禁止修改模型<br>
+                4.禁止用于制作视频之外的用途<br>
+                <br>
+                画师：毛梳子
+                <br>
+                模型：108工作室
+                <br><br>
+
+            </div>
+            <div class="modal-footer">
+                <a href="static/XueHu3D-20230718.zip" target="_blank" class="btn btn-primary" style="background-color: #4f8bae;font-size: 10pt;">我已知晓使用协议并下载</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let camera = {};
+    let controls = {};
+    let effect = {};
+    let light = {};
+    let mesh = {};
+    let renderer = {};
+    let scene = {};
+    let canvasSizeW = parseInt(window.getComputedStyle(document.getElementById('webgl')).width);
+    let canvasSizeH = parseInt(window.getComputedStyle(document.getElementById('webgl')).width) * 540 / 960;
+    let img = document.getElementById("mask-img");
+
+    function startRender() {
+        // img.parentNode.removeChild(img);
+        img.style.display = "none";
+        prepareScene();
+        loadMMD();
+        sceneRender();
+    }
+
+    function prepareScene() {
+        renderer = new THREE.WebGLRenderer({antialias: true});
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(canvasSizeW, canvasSizeH);
+        renderer.setClearColor(0xffffff, 1.0);
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        document.getElementById('webgl').appendChild(renderer.domElement);
+        effect = new THREE.OutlineEffect(renderer);
+        scene = new THREE.Scene();
+        scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+        light = new THREE.DirectionalLight(0xffe2b9, 0.4);
+        light.castShadow = false;
+
+        scene.add(light);
+        scene.add(light.target);
+
+        camera = new THREE.PerspectiveCamera(22.9, canvasSizeW / canvasSizeH, 0.1, 20);
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = .05;
+        controls.minDistance = 1;
+        controls.maxDistance = 10;
+        const GROUND_MESH = new THREE.Mesh(new THREE.PlaneGeometry(10, 10, 1, 1), new THREE.ShadowMaterial({opacity: 0}));
+        GROUND_MESH.geometry.rotateX(-90 * Math.PI / 180);
+        GROUND_MESH.receiveShadow = true;
+        scene.add(GROUND_MESH);
+        scene.add(new THREE.GridHelper(8, 20, 0x000000, 0x999999));
+    }
+
+    function loadMMD() {
+        const LOADER = new THREE.MMDLoader();
+        LOADER.load(
+            'https://i1.xuehusang.cn/static/xuehu3D/%E9%9B%AA%E7%8B%90_0718.pmx',
+            function (mmd) {
+                mesh = mmd;
+                for (let i = 0; i < mesh.material.length; i++) {
+                    mesh.material[i].emissive.multiplyScalar(0.3);
+                    mesh.material[i].userData.outlineParameters.thickness = 0.001;
+                }
+                mesh.castShadow = true;
+                mesh.receiveShadow = true;
+                mesh.scale.copy(new THREE.Vector3(1, 1, 1).multiplyScalar(0.0739));
+                const BOUNDING_BOX = new THREE.Box3().setFromObject(mesh);
+                camera.position.copy(new THREE.Vector3(0, 0.5 * BOUNDING_BOX.max.y, 4.5));
+                controls.target = new THREE.Vector3(0, 0.5 * BOUNDING_BOX.max.y, 0);
+                light.target.position.copy(new THREE.Vector3(0, 0.5 * BOUNDING_BOX.max.y, 0));
+                scene.add(mesh);
+            }
+        );
+        resizeRender();
+    }
+
+    function sceneRender() {
+        effect = new THREE.OutlineEffect(renderer);
+        window.requestAnimationFrame(sceneRender);
+        effect.render(scene, camera);
+        controls && controls.update()
+    }
+
+    function resizeRender() {
+        window.addEventListener('resize', function () {
+            effect.setSize(parseInt(window.getComputedStyle(document.getElementById('webgl')).width), parseInt(window.getComputedStyle(document.getElementById('webgl')).width) * 540 / 960);
+        }, false);
+    }
+</script>
+<section id="reward" class="blog-area pt-40 pb-30">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">粉丝福利</h2>
+                </div>
+            </div>
+        </div>
+        <div class="section-title pb-35 row">
+            <div class="section-title col-lg-12">
+                <h2 class="title">舰长礼物</h2>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 pt-10" style="display: flex;">
+                <p style="line-height: 30px;">舰长福利站（冰屋咖啡店）</p>
+                <div style="float: left;margin-left: 8px;">
+                    <a class="main-btn" href="cafe/index.htm" style="padding: 10px !important;line-height: inherit;box-shadow: none !important;-webkit-box-shadow:none !important;" target="_blank">→</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-title pb-35 row">
+            <div class="section-title col-lg-12">
+                <h2 class="title">音声</h2>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-10" style="display: flex;">
+                <p style="line-height: 30px;">起床闹钟</p>
+                <div id="bapRender" class="ml-1"></div>
+                <a download="" href="assets/music/%E8%B5%B7%E5%BA%8A%E9%97%B9%E9%92%9F.mp3" target="_blank"><img alt="下载" src="img/download.svg" style="width: 51px;height: 51px;"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-10" style="display: flex;">
+                <p style="line-height: 30px;">温柔叫早</p>
+                <div id="bapRender1" class="ml-1"></div>
+                <a download="" href="assets/music/%E7%8B%90%E7%8B%90%E5%8F%AB%E6%97%A9.mp3" target="_blank"><img alt="下载" src="img/download.svg" style="width: 51px;height: 51px;"></a>
+            </div>
+        </div>
+        <div class="reward-container">
+            <div class="section-title pb-2">
+                <h2 class="title">其他</h2>
+                <div class="row ml-0">
+                    <div class="col-xs-6 mr-20">
+                        <p>鼠标指针</p>
+                        <a class="mr-3" download="" href="images/%E9%9B%AA%E7%8B%90%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88.cur"><img alt="鼠标样式" src="images/mosue.png" style="height: 20vw;max-height: 100px;"></a>
+                        <a class="mr-3" download="" href="assets/images/cursor/1.ani"><img alt="鼠标指针" src="assets/images/cursor/4Yrvqb.gif" style="height: 20vw;max-height: 100px;"></a>
+                        <a class="mr-3" download="" href="assets/images/cursor/2.ani"><img alt="鼠标指针" src="assets/images/cursor/WulhPd.gif" style="height: 20vw;max-height: 100px;"></a>
+                    </div>
+                    <div class="col-xs-6">
+                        <p>搜狗输入法皮肤</p>
+                        <a download="" href="images/%E9%9B%AA%E7%8B%90%E6%A1%91.ssf"><img alt="输入法皮肤" src="images/shurufa.png" style="float:right;height: 20vw;max-height: 110px;" width="500"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="qa" class="blog-area pt-80 pb-20">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">常见Q&A</h2>
+                </div>
+            </div>
+        </div>
+        <div class="qaa-container">
+            <div class="qa-container">
+                <dl>
+                    <dt>Q：雪狐一般什么时候直播？</dt>
+                    <dd>
+                        <p>
+                            A:雪狐并不是全职主播，是一只随时可能会加班的可怜社畜，空闲时间播播玩，并不能保证固定直播的时间，所以是随机直播哒！</p>
+                        <p>
+                            每次开播的话会在禁言通知qq群117316548（徽章名称：雪狐咕）里面发送通知的，如果想蹲的话欢迎进群！现在一般会工作日晚上6点-11点随机掉落，不能保证每天出没，请不要等着雪狐或者问为什么不播～!</p>
+                    </dd>
+                    <dt>Q：雪狐为什么不做全职主播？</dt>
+                    <dd>
+                        <p>
+                            A：首先是全职主播的风险较大，稳定性不高，不能保证未来一直会顺利进行下去；还有就是不想把爱好变成职业，想要怀着开开心心的心情和大家一起在直播间里玩～</p>
+                    </dd>
+                    <dt>Q：雪狐为什么决定做虚拟主播？</dt>
+                    <dd>
+                        <p>
+                            A：原来很喜欢一个游戏UP主，想模仿她做游戏实况，后来暑假比较闲，直播了几天游戏玩但是看的人不多，有粉丝说现在虚拟主播很火诶，不如画个皮吧，说不定看的人会变多呢，雪狐就成为虚拟主播了～</p>
+                    </dd>
+                    <dt>Q：雪狐的画师和建模麻麻是谁？</dt>
+                    <dd>
+                        <p>A：成年雪狐的画师麻麻是<a class="channel" href="https://space.bilibili.com/17511965" target="_blank">@咦我的头发呢</a>，幼年雪狐的画师麻麻是<a class="channel" href="https://space.bilibili.com/906228" target="_blank">@小森佑</a>，建模麻麻是@江城城城城
+                        </p>
+                    </dd>
+                    <dt>Q：雪狐我也想成为虚拟主播！有什么建议吗？</dt>
+                    <dd>
+                        <p>
+                            A：最重要的一点就是保持良好心态。你需要变得足够强大去适应没有人进直播间、直播间/评论/私信里有奇怪言论、自己患得患失胡思乱想等情况，希望你可以做让自己开心的事情！</p>
+                    </dd>
+                    <dt>Q：幼狐！我要幼狐！幼狐那么可爱为什么不是一直是幼狐？</dt>
+                    <dd>
+                        <p>A：（二次元版本回答）幼狐是雪狐经过时间倒流才能达到的状态，魔力不能维持太久～</p>
+                        <p>
+                            （三次元版本回答）雪狐是更真实的样子，幼狐更靠近角色扮演的感觉，扮演很好玩，但是还是希望大家喜欢的是雪狐w（另嗓子坚持不了太久）</p>
+                    </dd>
+                    <dt>Q：雪狐你都有哪些老婆？你最爱哪个老婆？</dt>
+                    <dd>
+                        <p>A：现在比较钟爱的老婆有：莉娅（<a class="channel" href="https://space.bilibili.com/489146840" target="_blank">@奈奈莉娅</a>），歌歌（<a class="channel" href="https://space.bilibili.com/671538942" target="_blank">@黎歌Neeko</a>），兔兔（<a class="channel" href="https://space.bilibili.com/2128310" target="_blank">@夕兔_H2</a>）（均为B站账号）；
+                        </p>
+                        <p>但是比起来是老婆，更像是一起奋斗的战友，希望大家可以在直播的道路上朝着正确的方向前进</p>
+                    </dd>
+                    <dt>Q：雪狐直播的初心是什么？</dt>
+                    <dd>
+                        <p>
+                            A：自己玩得开心，自由地无拘无束聊着自己喜欢的话题，播着想玩的游戏。对于观众的话，谢谢大家对雪狐的支持，我始终保持着感激，但是我不会根据大家的意见/建议来调整自己的直播，我只会根据自己的想法来调整直播～如果你喜欢雪狐的直播，那就看；如果不喜欢，那就不看～我们是平等的，你有自己选择看什么的权利，谢谢喜欢！</p>
+                    </dd>
+                    <dt>Q：雪狐怎么没读到我发的弹幕/SC呀？</dt>
+                    <dd>
+                        <p>
+                            A：首先不好意思！因为直播间里只有雪狐一个人一张嘴，所以肯定没有办法念到所有人的弹幕的orz而且雪狐是单线程生物，当时在聊别的话题的话，脑子在转，是没有办法去回应弹幕的；还有不建议大家反复刷一样的弹幕，这样直播观感不佳w谢谢～漏掉SC的话记得弹幕提醒我，毕竟是钱（）</p>
+                    </dd>
+                    <dt>Q：雪狐以后会玩游戏吗？以后的直播方向是什么？</dt>
+                    <dd>
+                        <p>A：有想玩的游戏就玩，播的很随意；不知道以后会向哪里走，但是慢慢走比较快吧～</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="work-more text-center">
+            <a class="main-btn" href="https://ask.xuehusang.cn" target="_blank">投稿棉花糖</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function () {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('click', 'dt', function () {
+                $(this).next().slideToggle(200);
+            });
+
+        })();
+    </script>
+</section>
+<section id="work" class="work-area pt-80 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="section-title pb-25">
+                    <h2 class="title">最新切片</h2>
+                    <p>传送门：<a class="channel" href="https://www.bilibili.com/video/BV1t4411W7Lx" target="_blank">录播1 </a>
+                        &nbsp;<a class="channel" href="https://www.bilibili.com/video/BV1Rh411q7Ju" target="_blank">录播2 </a>
+                        &nbsp;<a class="channel" href="https://www.bilibili.com/video/BV1k94y1X7Nz" target="_blank">录播3 </a>
+                        <a class="channel" href="https://www.bilibili.com/video/BV1Pm4y1b7w6" target="_blank">录播4 </a>
+                        &nbsp;<a class="channel" href="https://www.bilibili.com/video/BV1Vx411a7HR" target="_blank">深夜自习室BGM</a><br>
+                        喜欢雪狐的话就点一下关注吧&gt;w&lt; <br>
+                        希望大家看视频的时候可以多发弹幕&amp;评论，这样就知道怎么改进啦！ <br></p>
+                </div>
+            </div>
+            <!--
+            <iframe id="b" class="col-lg-4 col-md-6 col-sm-6" src="https://xbeibeix.com/api/bilibili/biliplayer/?url=https://www.bilibili.com/video/BV1Yy4y1z7SZ" frameborder="0" allowfullscreen="true" width="30%wh" align="right">
+            </iframe>
+-->
+        </div>
+        <div id="videoloop" class="row">
+        </div>
+        <br>
+        <br>
+        <h2 class="title">最新歌曲</h2>
+        <div id="pvloop" class="row">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="work-more text-center mt-50">
+                    <a class="main-btn" href="https://space.bilibili.com/477792/video" target="_blank">更多视频</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog" class="blog-area pt-80 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">游戏</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-5" style="text-align: center;">
+                <p class="secondtitle" style="text-align: center;">狐了个狐</p>
+                <img alt="狐了个狐" src="images/hulegehu.jpg" style="border-radius: 10px;"><br><br>
+                <a class="main-btn" href="hulegehu/index.htm">点击游玩</a>
+            </div>
+            <div class="col-lg-5" style="text-align: center;">
+                <p class="secondtitle" style="text-align: center;   ">合成大萨摩</p>
+                <img alt="合成大萨摩" src="images/makesamo.jpg" style="border-radius: 10px;"><br><br>
+                <a class="main-btn" href="PCgame.html" target="_blank">点击游玩</a>
+            </div>
+        </div>
+        <div class="row justify-content-md-center pt-4">
+            <div class="col-lg-8" style="text-align: center;">
+                <p class="secondtitle" style="text-align: center;">雪狐桑的不妙冒险 ——凯炎出品</p>
+
+                <img alt="雪狐桑的不妙冒险" src="images/xuehugame.jpg" style="border-radius:10px;"><br><br>
+                <button class="main-btn" data-target="#exampleModal" data-toggle="modal" type="button">
+                    直播效果密码
+                </button>
+
+                <div id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade " tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="exampleModalLabel" class="modal-title">密码</h5>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                单推的密码：771296 凯炎的密码：1314
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="main-btn text-center" href="%E9%9D%99%E6%80%81%E5%86%85%E5%AE%B9/%E9%9B%AA%E7%8B%90%E6%A1%91%E7%9A%84%E4%B8%8D%E5%A6%99%E5%86%92%E9%99%A9.zip" target="_blank">下载游玩 WIN</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-area pt-80 pb-130 gray-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">关于</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+
+                    <div class="contact-content">
+                        <h6 class="contact-title">版权声明&nbsp;</h6>
+                        <p>本站仅供交流学习，站内相关图片、音频、视频、模型版权归雪狐桑所有。<br>本站点的开设、关闭和内容设置以雪狐本人意愿为准。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-content">
+                        <h6 class="contact-title">联系我们&nbsp;</h6>
+                        <p>网站的浏览遇到任何问题请<a class="channel" href="https://message.bilibili.com/#/whisper/mid198165375" target="_blank">点击此处跳转</a>提意见</p>
+                        <p>&nbsp;欲联系雪狐本人请前往B站个人空间私信</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-content">
+                        <h6 class="contact-title">浏览器&nbsp;</h6>
+                        <p>推荐使用Edge、Chrome、QQ浏览器等新版主流浏览器以获得最佳浏览体验&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="aplayer"></div>
+<footer id="footer" class="footer-area">
+    <div class="footer-widget pt-30 pb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md footer-main">
+                    <img alt="footer logo" class="mb-2" src="assets/images/footer-logo.png" style="width: 150px;height: auto;">
+                    <small class="d-block mb-2">©2021-2023 xuehusang.cn</small>
+                    <small class="d-block mb-2"><a class="link-footer" href="http://beian.miit.gov.cn/" target="_blank">津ICP备2021001073号-1</a></small>
+                    <small class="d-block mb-2"><a class="link-footer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12010402001365" target="_blank"><img alt="公安备案" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12010402001365" src="beian/gonganlogo.png"></a> <a class="link-footer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12010402001365" target="_blank">津公网安备12010402001365号</a></small>
+                </div>
+                <div class="col-6 col-md">
+                    <small style="color: white;">站内导航</small>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="https://pic.xuehusang.cn/" target="_blank">壁纸站</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://ask.xuehusang.cn/" target="_blank">棉花糖</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://song.xuehusang.cn/" target="_blank">直播点歌单</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="cafe/index.htm" target="_blank">冰屋咖啡店</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://rec.xuehusang.cn/" target="_blank">自动路灯</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="hulegehu/index.htm" target="_blank">狐了个狐</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="PCgame.html" target="_blank">合成大萨摩</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="10W/index.htm" target="_blank">十万粉雪狐纪</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <small style="color: white;">雪狐的传送门</small>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="https://space.bilibili.com/477792" target="_blank">B站</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://live.bilibili.com/24393" target="_blank">直播间</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://music.163.com/#/artist?id=36941700" target="_blank">网易云</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://tieba.baidu.com/f?kw=%E9%9B%AA%E7%8B%90%E6%A1%91" target="_blank">贴吧</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://afdian.net/@xuehusang" target="_blank">爱发电</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#calendar">直播日历</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://jq.qq.com/?_wv=1027&k=tAGymo1H" target="_blank">直播通知群</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <small style="color: white;">友情链接</small>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="https://orihararuru.club/" target="_blank">长颈鹿的快乐老家</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://meumy.club/?from=xuehuigloo" target="_blank">MeUmy草原平行时空</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://images.xiyuemona.live/" target="_blank">希月图片站</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://vtbs.moe/?from=xuehuigloo" target="_blank">VTBs in
+                                bilibili!</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="https://zh.moegirl.org.cn/%E9%9B%AA%E7%8B%90%E6%A1%91" target="_blank">雪狐桑 - 萌娘百科</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- easter egg -->
+<div id="icecream" aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: transparent;border: none !important;">
+            <div class="modal-body">
+                <img alt="草莓香草甜筒~" class="lazy_load" src="images/icecream.gif">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Model Download Warning -->
+<a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+<script src="js/message.js"></script>
+<!--粉丝实时查询30秒循环查询-->
+<script>
+    function Yuanxing() {
+        var ajax = new XMLHttpRequest();
+        ajax._url = "https://api.xuehusang.cn/FansNum?" + Math.random();
+        ajax.open("GET", ajax._url, true);
+
+        ajax.send(null);
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4) {
+                let ajax_f = ajax.responseText;
+                let ajax_z = JSON.parse(ajax_f);
+                let xianshi = document.getElementById("fensi");
+                xianshi.innerHTML = "现在共有" + ajax_z.fensishu + "只雪狐咕";
+            }
+        }
+    }
+
+    Yuanxing();
+
+</script>
+<!--RANDOM WELCOME WORD-->
+<script>
+    function randomword() {
+        var ajax = new XMLHttpRequest();
+        ajax._url = "https://api.xuehusang.cn/RandomWord?" + Math.random();
+        ajax.open("GET", ajax._url, true);
+
+        ajax.send(null);
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4) {
+                let ajax_f = ajax.responseText;
+                let ajax_z = JSON.parse(ajax_f);
+                let randomw = document.getElementById("randomword");
+                randomw.innerHTML = ajax_z.word;
+
+            }
+
+        }
+
+
+    }
+
+    randomword();
+</script>
+<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/jquery.appear.min.js"></script>
+<script src="assets/js/scrolling-nav.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="aegis/aegis-sdk/latest/aegis.min.js"></script>
+<!--<script src="js/APlayer.min.js"></script>-->
+<!--<script src="js/musiclist_202204260225.js"></script>-->
+<!--标题彩蛋-->
+<script>
+    document.addEventListener('visibilitychange', function () {
+        var isHidden = document.hidden;
+        if (isHidden) {
+            setTimeout(() => {
+                document.title = '|･ω･｀)你看不见我';
+            }, 5000)
+            ;
+        } else {
+            document.title = '｜д•´)!!被你发现了';
+            setTimeout(() => {
+                document.title = '雪狐冰屋 — 雪狐桑的个人网站';
+            }, 3000)
+        }
+    });
+</script>
+<script src="assets/js/jquery.button-audio-player.js"></script>
+<script>
+    (function ($) {
+        $('#bapRender').buttonAudioPlayer({
+            type: 'bar-animation',
+            src: '/assets/music/起床闹钟.mp3'
+        });
+        $('#bapRender1').buttonAudioPlayer({
+            type: 'bar-animation',
+            src: '/assets/music/狐狐叫早.mp3'
+        });
+    })(jQuery);
+</script>
+<script src="js/videolist_202211151542.js"></script>
+</body>
+</html>
