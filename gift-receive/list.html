@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../css-1?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="layer/theme/default/layer.css">
+    <link rel="stylesheet" type="text/css" href="css/reponse.css">
+    <title>雪狐上舰电子福利 · 发放情况</title>
+</head>
+<body>
+
+
+<div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('../wp-content/uploads/2022/06/花嫁1.png');"></div>
+    <div class="contents order-2 order-md-1" style="background-color: #F8F9FA;">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7">
+                    <h1 style="color: #4F8BAE;"><strong>福利目录</strong></h1>
+                    <p>收录列表和发放情况</p>
+                    <hr class="mb-4">
+                    <table id="table" class="reponsetable"></table>
+                    <div class="d-flex mb-5 align-items-center">
+                        <span><a href="index.htm">返回</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/jquery.basictable.min.js"></script>
+<script type="text/javascript" src="js/reponsetable.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script>
+    window.onload = function () {
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+            return new bootstrap.Toast(toastEl)
+        });
+        toastList.forEach(toast => toast.show());
+    }
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('#table').basictable({
+            breakpoint: 768
+        });
+        $("#table").reponsetable({
+            "id":"table",
+            "operation": "editer",
+            "type":"numbers",
+            "colum": [
+                {"field": "No","title": "场次"},
+                {"field": "Gift","title": "福利"},
+                {"field": "Condition","title": "特殊码"}
+            ],
+            "data": [
+                {"No": "四十万粉纪念回·舰长","Gift": "15min约会语音","Condition": "40w舰长福利问卷中"},
+                {"No": "四十万粉纪念回·提督","Gift": "20min哄睡语音","Condition": "已于B站私信发放"},
+                {"No": "二周年纪念回·上舰","Gift": "晨间闹铃 来电提示音 音声","Condition": "二周年舰长问卷中"},
+            ]
+        });
+
+    })
+</script>
+</body>
+</html>
